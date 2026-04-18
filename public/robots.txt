@@ -1,5 +1,5 @@
 # TaaSa Rice Processing Company - Robots.txt
-# https://taasariceprocessingcompany.netlify.app/
+# https://taasabusinessgroup.com/
 
 User-agent: *
 Allow: /
@@ -10,4 +10,4 @@ Disallow: /admin/
 Disallow: /*.json$
 
 # Sitemap
-Sitemap: https://taasariceprocessingcompany.netlify.app/sitemap.xml
+Sitemap: https://taasabusinessgroup.com/sitemap.xml
