@@ -450,7 +450,35 @@
             "reviewCount": "156"
           },
           "countryOfOrigin": "Sri Lanka",
-          "nsn": "LK-AM-32000"
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryRate",
+              "currency": "USD"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 3,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 5,
+                "maxValue": 14,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "name": "30-Day Return Policy",
+            "returnPolicy": "https://schema.org/ReturnPolicy",
+            "merchantReturnDays": 30,
+            "returnFee": "https://schema.org/FreeReturn"
+          }
         },
         {
           "@type": "Product",
@@ -487,7 +515,36 @@
             "ratingValue": "4.7",
             "reviewCount": "98"
           },
-          "countryOfOrigin": "Sri Lanka"
+          "countryOfOrigin": "Sri Lanka",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryRate",
+              "currency": "USD"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 3,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 5,
+                "maxValue": 14,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "name": "30-Day Return Policy",
+            "returnPolicy": "https://schema.org/ReturnPolicy",
+            "merchantReturnDays": 30,
+            "returnFee": "https://schema.org/FreeReturn"
+          }
         }
       ]
     }
