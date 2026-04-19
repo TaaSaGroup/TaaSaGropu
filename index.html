@@ -292,7 +292,7 @@
           "longitude": 79.8612
         }
       },
-      "location": {
+      "additionalLocations": {
         "@type": "Place",
         "name": "TaaSa Rice Processing Plant - Ampara",
         "address": {
@@ -530,17 +530,33 @@
     }
 </script>
 
-  <!-- Structured Data - Review snippets for E-E-A-T -->
+  <!-- Structured Data - Organization with AggregateRating for E-E-A-T -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AggregateRating",
-    "name": "TaaSa Rice Processing Company Reviews",
-    "ratingValue": "4.8",
-    "bestRating": "5",
-    "worstRating": "1",
-    "reviewCount": "254",
-    "ratingExplanation": "Based on 254 verified buyer reviews for premium Sri Lankan rice exports"
+    "@type": "Organization",
+    "name": "TaaSa Rice Processing Company",
+    "url": "https://taasabusinessgroup.com/",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "254"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Verified Buyers"
+      },
+      "reviewBody": "Based on 254 verified buyer reviews for premium Sri Lankan rice exports"
+    }
   }
   </script>
 
