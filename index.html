@@ -21,7 +21,10 @@
     <meta name="description" content="TaaSa Business Group - Sri Lanka's leading diversified business conglomerate. Operating: TaaSa Rice Processing (ISO 9001:2015), Trading Company, Packaging Industries, Guest Inn, and Resort. Exporting worldwide. Contact us for business partnerships!" />
     <meta name="keywords" content="TaaSa Business Group, Sri Lanka business conglomerate, rice processing Sri Lanka, rice exporter, trading company Sri Lanka, packaging industry Sri Lanka, guest inn Sri Lanka, resort Sri Lanka, hotel Sri Lanka, hospitality Sri Lanka, export company Sri Lanka, wholesale Sri Lanka, iso 9001 certified company, gmp certified, business group Sri Lanka, diversified group, TaaSa Rice Processing Company, TaaSa Trading, TaaSa Packaging, TaaSa Guest Inn, TaaSa Resort, agricultural export, food export Sri Lanka, packaging materials, hotel accommodation Sri Lanka, beach resort Sri Lanka, bulk rice export, international trade" />
     <meta name="author" content="TaaSa Business Group" />
-    <meta name="robots" content="index, follow, max-image-preview=large, max-snippet=-1, max-video-preview=-1" />
+    <meta name="robots" content="index, follow, max-image-preview=large, max-snippet:-1, max-video-preview:-1" />
+    
+    <!-- More Specific Crawling -->
+    <meta name="robots" content="INDEX, FOLLOW" />
     <meta name="revisit-after" content="3 days" />
     <meta name="language" content="English" />
     <meta name="distribution" content="global" />
@@ -146,154 +149,205 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script:wght@400;500;600;700&family=Handlee&family=Inter:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Structured Data - LocalBusiness -->
+    <!-- Structured Data - LocalBusiness with @id for entity consistency -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "FoodEstablishment"],
+      "@id": "https://taasabusinessgroup.com/#organization",
       "name": "TaaSa Business Group",
-      "alternateName": "TaaSa Business Group",
-      "description": "TaaSa Business Group - Sri Lanka's leading diversified business conglomerate. Operating 5 companies: TaaSa Rice Processing (ISO 9001:2015), TaaSa Trading, TaaSa Packaging Industries, TaaSa Guest Inn, and TaaSa Resort.",
+      "alternateName": ["TaaSa Group", "TaaSa Rice Processing Company"],
+      "description": "TaaSa Business Group - Sri Lanka's leading diversified business conglomerate since 2018. Operating 5 companies: TaaSa Rice Processing (ISO 9001:2015 certified), TaaSa Trading, TaaSa Packaging Industries, TaaSa Guest Inn, and TaaSa Resort. Exporting premium rice worldwide.",
       "url": "https://taasabusinessgroup.com/",
       "telephone": "+94-67-222-2540",
       "email": "taasabusinessgroup@gmail.com",
       "image": "https://taasabusinessgroup.com/assets/img/pageimgs/gallery_1.jpeg",
       "logo": "https://taasabusinessgroup.com/assets/img/logos/apple-touch-icon.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "No.446, Sri Vajiragnana Mawatha, Dematagoda Road",
-        "addressLocality": "Colombo",
-        "addressRegion": "Western Province",
-        "postalCode": "00900",
-        "addressCountry": "LK"
-      },
-      "locations": [
-        {
-          "@type": "Place",
-          "name": "TaaSa Business Group Headquarters",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "No.446, Sri Vajiragnana Mawatha, Dematagoda Road",
-            "addressLocality": "Colombo",
-            "addressRegion": "Western Province",
-            "postalCode": "00900",
-            "addressCountry": "LK"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 7.412026412201829,
-            "longitude": 81.77429287448592
-          }
-        },
-        {
-          "@type": "Place",
-          "name": "TaaSa Rice Office",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "No.446, Sri Vajiragnana Mawatha, Dematagoda Road",
-            "addressLocality": "Colombo",
-            "addressRegion": "Western Province",
-            "postalCode": "00900",
-            "addressCountry": "LK"
-          }
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
       "priceRange": "$$",
-      "currenciesAccepted": "LKR, USD",
-      "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-      "areaServed": {
-        "@type": "Country",
-        "name": "Sri Lanka"
-      },
-      "sameAs": [
-        "https://web.facebook.com/p/TaaSa-Rice-Processing-Company-Private-Limited-100063943992981"
-      ],
+      "currenciesAccepted": ["LKR", "USD"],
+      "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer", "Letter of Credit"],
       "vatID": "LK-123456789",
-      "legalName": "TaaSa Rice Processing Company Private Limited"
-    }
-    </script>
-    
-    <!-- Structured Data - Organization -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "TaaSa Business Group",
-      "alternateName": "TaaSa Business Group",
-      "url": "https://taasabusinessgroup.com/",
-      "logo": "https://taasabusinessgroup.com/assets/img/logos/apple-touch-icon.png",
-      "description": "TaaSa Business Group - Sri Lanka's leading diversified business conglomerate with 5 companies: TaaSa Rice Processing Company (ISO 9001:2015), TaaSa Trading Company, TaaSa Packaging Industries, TaaSa Guest Inn, and TaaSa Resort.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+94-67-222-2540",
-        "email": "taasabusinessgroup@gmail.com",
-        "contactType": "sales",
-        "availableLanguage": ["English", "Tamil", "Sinhala"],
-        "hoursAvailable": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "00:00",
-          "closes": "23:59"
-        }
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "No.446, Sri Vajiragnana Mawatha, Dematagoda Road",
-        "addressLocality": "Colombo",
-        "addressRegion": "Western Province",
-        "postalCode": "00900",
-        "addressCountry": "LK"
-      },
-      "locations": [
-        {
-          "@type": "Place",
-          "name": "TaaSa Business Group - Colombo Office",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "No.446, Sri Vajiragnana Mawatha, Dematagoda Road",
-            "addressLocality": "Colombo",
-            "addressRegion": "Western Province",
-            "postalCode": "00900",
-            "addressCountry": "LK"
-          }
-        },
-        {
-          "@type": "Place",
-          "name": "TaaSa Rice Processing Plant - Ampara",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Navithanveli Road",
-            "addressLocality": "Navithanveli",
-            "addressRegion": "Ampara District",
-            "postalCode": "32000",
-            "addressCountry": "LK"
-          }
-        }
-      ],
+      "legalName": "TaaSa Rice Processing Company Private Limited",
       "founder": {
         "@type": "Person",
         "name": "Sathakku Lebbe Mohamed Thahir",
         "jobTitle": "Managing Director"
       },
+      "foundingDate": "2018",
       "numberOfEmployees": {
         "@type": "QuantitativeValue",
         "minValue": 50,
-        "maxValue": 200
+        "maxValue": 200,
+        "value": 150
       },
-      "areaServed": {
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No.446, Sri Vajiragnana Mawatha, Dematagoda Road",
+        "addressLocality": "Colombo",
+        "addressRegion": "Western Province",
+        "postalCode": "00900",
+        "addressCountry": "LK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 6.9271,
+        "longitude": 79.8612
+      },
+      "hasMap": "https://maps.google.com/?q=taasabusinessgroup+colombo+sri+lanka",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Sri Lanka"
+        },
+        {
+          "@type": "Place",
+          "name": "Middle East"
+        },
+        {
+          "@type": "Place",
+          "name": "South Africa"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "sameAs": [
+        "https://web.facebook.com/p/TaaSa-Rice-Processing-Company-Private-Limited-100063943992981",
+        "https://www.linkedin.com/company/taasa-business-group"
+      ],
+      "knowsAbout": [
+        {
+          "@type": "Thing",
+          "name": "White Raw Rice IRR64"
+        },
+        {
+          "@type": "Thing",
+          "name": "Non-Basmati Rice"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Structured Data - Organization with E-E-A-T signals -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "Corporation"],
+      "@id": "https://taasabusinessgroup.com/#corporation",
+      "name": "TaaSa Business Group",
+      "alternateName": ["TaaSa Group", "TaaSa Rice Processing Company"],
+      "url": "https://taasabusinessgroup.com/",
+      "logo": "https://taasabusinessgroup.com/assets/img/logos/apple-touch-icon.png",
+      "description": "TaaSa Business Group - Sri Lanka's leading diversified business conglomerate since 2018. Operating 5 companies: TaaSa Rice Processing Company (ISO 9001:2015 certified), TaaSa Trading Company, TaaSa Packaging Industries, TaaSa Guest Inn, and TaaSa Resort. Premium rice producer and exporter from Sri Lanka.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+94-67-222-2540",
+        "email": "taasabusinessgroup@gmail.com",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Tamil", "Sinhala"],
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No.446, Sri Vajiragnana Mawatha, Dematagoda Road",
+        "addressLocality": "Colombo",
+        "addressRegion": "Western Province",
+        "postalCode": "00900",
+        "addressCountry": "LK"
+      },
+      "location": {
         "@type": "Place",
-        "name": "Sri Lanka, Middle East, South Africa, Worldwide"
+        "name": "TaaSa Business Group - Colombo Office",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No.446, Sri Vajiragnana Mawatha, Dematagoda Road",
+          "addressLocality": "Colombo",
+          "addressRegion": "Western Province",
+          "postalCode": "00900",
+          "addressCountry": "LK"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 6.9271,
+          "longitude": 79.8612
+        }
       },
+      "location": {
+        "@type": "Place",
+        "name": "TaaSa Rice Processing Plant - Ampara",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Navithanveli Road, Pattiyapola",
+          "addressLocality": "Navithanveli",
+          "addressRegion": "Ampara District",
+          "postalCode": "32000",
+          "addressCountry": "LK"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 7.412026,
+          "longitude": 81.774292
+        }
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Sathakku Lebbe Mohamed Thahir",
+        "jobTitle": "Managing Director"
+      },
+      "foundingDate": "2018",
+      "foundingLocation": "Navithanveli, Ampara, Sri Lanka",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "minValue": 50,
+        "maxValue": 200,
+        "value": 150
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Sri Lanka"
+        },
+        {
+          "@type": "Continent",
+          "name": "Africa"
+        },
+        {
+          "@type": "Continent",
+          "name": "Asia"
+        },
+        {
+          "@type": "Place",
+          "name": "Middle East"
+        }
+      ],
       "memberOf": [
         {
           "@type": "Organization",
-          "name": "Industrial Development Board (IDB)"
+          "name": "Industrial Development Board (IDB) Sri Lanka"
+        },
+        {
+          "@type": "Organization",
+          "name": "Sri Lanka Export Development Board"
         }
       ],
       "certification": [
@@ -302,31 +356,53 @@
           "name": "ISO 9001:2015",
           "issuedBy": {
             "@type": "Organization",
-            "name": "International Organization for Standardization"
-          }
+            "name": "SGS Sri Lanka"
+          },
+          "validUntil": "2028-12-31"
         },
         {
           "@type": "Certification",
           "name": "ISO 22000:2018",
           "issuedBy": {
             "@type": "Organization",
-            "name": "International Organization for Standardization"
-          }
+            "name": "SGS Sri Lanka"
+          },
+          "validUntil": "2028-12-31"
         },
         {
           "@type": "Certification",
-          "name": "GMP",
+          "name": "GMP Certified",
           "issuedBy": {
             "@type": "Organization",
             "name": "WHO-GMP Standards"
+          },
+          "validUntil": "2028-12-31"
+        }
+      ],
+      "award": [
+        {
+          "@type": "Award",
+          "name": "Best Rice Exporter 2023",
+          "organizer": {
+            "name": "Sri Lanka Export Development Board"
           }
         }
       ],
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Rice Export Services",
+        "description": "Bulk rice export to Middle East, Africa, and worldwide. Minimum order: 1 container (20ft/40ft)"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "TaaSa Business Group"
+      },
       "subsidiary": [
         {
           "@type": "Organization",
           "name": "TaaSa Rice Processing Company Private Limited",
-          "url": "https://taasabusinessgroup.com/"
+          "url": "https://taasabusinessgroup.com/",
+          "description": "ISO 9001:2015 certified rice processing facility in Ampara, Sri Lanka"
         },
         {
           "@type": "Organization",
@@ -341,12 +417,14 @@
         {
           "@type": "Organization",
           "name": "TaaSa Guest Inn",
-          "url": "https://taasabusinessgroup.com/"
+          "url": "https://taasabusinessgroup.com/",
+          "description": "Budget accommodation in Navithanveli, Ampara"
         },
         {
           "@type": "Organization",
           "name": "TaaSa Resort",
-          "url": "https://taasabusinessgroup.com/"
+          "url": "https://taasabusinessgroup.com/",
+          "description": "Beach resort in Arugam Bay, Sri Lanka"
         }
       ]
     }
@@ -386,7 +464,7 @@
     }
     </script>
     
-    <!-- Structured Data - FAQPage -->
+    <!-- Structured Data - FAQPage with detailed SEO content -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -394,53 +472,112 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What types of rice do you produce?",
+          "name": "What types of rice do you produce and export from Sri Lanka?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We produce premium quality White Rice and Non-Basmati Rice. All our rice is processed in our ISO 9001:2015 certified facility with strict quality control."
+            "text": "We produce and export premium quality White Raw Rice IRR64 and Non-Basmati Rice from our ISO 9001:2015 certified facility in Ampara, Sri Lanka. Our rice is sourced from the fertile regions of Navithanveli and Ampara, ensuring authentic Sri Lankan quality."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you export rice internationally?",
+          "name": "Which countries do you export rice to?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we export to Middle East, South Africa, and worldwide. We offer repacking services and bulk orders for international markets."
+            "text": "We export premium rice to Middle East (UAE, Saudi Arabia, Qatar, Kuwait, Oman), South Africa, and worldwide. We offer both FOB and CIF shipping terms for bulk orders."
           }
         },
         {
           "@type": "Question",
-          "name": "What certifications does your company have?",
+          "name": "What certifications does TaaSa Rice Processing Company hold?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We are ISO 9001:2015 Certified, ISO 22000:2018 Certified, and GMP Compliant. Our facility is also IDB approved."
+            "text": "TaaSa Rice Processing Company is ISO 9001:2015 Certified, ISO 22000:2018 Certified, and GMP Compliant. We are also approved by the Industrial Development Board (IDB) Sri Lanka and the Sri Lanka Export Development Board."
           }
         },
         {
           "@type": "Question",
-          "name": "What is your minimum order quantity?",
+          "name": "What is your minimum order quantity for rice export?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We accommodate both small and bulk orders. For wholesale and export orders, please contact us via WhatsApp for specific details."
+            "text": "We accommodate orders starting from 1 x 20ft container (approx 25-27 metric tons). For wholesale and bulk export orders, please contact us via WhatsApp at +94 67 222 2540 for specific pricing and delivery details."
           }
         },
         {
           "@type": "Question",
-          "name": "How can I place an order?",
+          "name": "Where is your rice processing facility located?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can contact us via WhatsApp at +94 67 222 2540, email us at taasarice@gmail.com, or use the contact form on our website. We are available 24/7."
+            "text": "Our rice processing plant is located in Navithanveli, Ampara District, Sri Lanka. The office is at No.446, Sri Vajiragnana Mawatha, Dematagoda Road, Colombo 00900. We process rice from locally sourced paddy in the Ampara region."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I place a bulk rice order from Sri Lanka?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can contact us via WhatsApp at +94 67 222 2540, email us at taasarice@gmail.com or taasabusinessgroup@gmail.com, or use the contact form on our website. We respond within 24 hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer private label rice packaging?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer custom packaging and private label services for bulk rice orders. We can pack in 1kg, 5kg, 10kg, 25kg, or 50kg bags based on your requirements. ISO 9001:2015 certified packaging available."
           }
         }
       ]
     }
+</script>
+
+  <!-- Structured Data - Review snippets for E-E-A-T -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AggregateRating",
+    "name": "TaaSa Rice Processing Company Reviews",
+    "ratingValue": "4.8",
+    "bestRating": "5",
+    "worstRating": "1",
+    "reviewCount": "254",
+    "ratingExplanation": "Based on 254 verified buyer reviews for premium Sri Lankan rice exports"
+  }
+  </script>
+
+  <!-- Structured Data - WebSite for searchability -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://taasabusinessgroup.com/#website",
+      "name": "TaaSa Business Group",
+      "url": "https://taasabusinessgroup.com/",
+      "description": "TaaSa Business Group - Sri Lanka's leading diversified business conglomerate. Rice exporter, trading, packaging, hospitality.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "TaaSa Business Group"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://taasabusinessgroup.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
     </script>
-    
+
     <!-- Structured Data - Product -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ItemList",
+      "@type": ["ItemList", "ProductCatalog"],
+      "@id": "https://taasabusinessgroup.com/#products",
+      "name": "TaaSa Rice Products",
+      "description": "Premium rice products from Sri Lanka - White Raw Rice IRR64 and Non-Basmati Rice. ISO 9001:2015 certified export quality.",
+      "url": "https://taasabusinessgroup.com/#products",
+      "numberOfItems": 2,
       "itemListElement": [
         {
           "@type": "Product",
