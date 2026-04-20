@@ -1,26 +1,13 @@
-# TaaSa Business Group - Robots.txt
+# TaaSa Rice Processing Company - Robots.txt
 # https://taasabusinessgroup.com/
 
 User-agent: *
 Allow: /
 
-# Crawl-delay for politeness
-Crawl-delay: 1
-
-# Block unnecessary areas only
+# Block unnecessary areas
 Disallow: /api/
 Disallow: /admin/
 Disallow: /*.json$
-Disallow: /assets/css/
-Disallow: /assets/js/
-Disallow: ?*
-
-# Allow essential resources
-Allow: /assets/img/
-Allow: /manifest.json
 
 # Sitemap
 Sitemap: https://taasabusinessgroup.com/sitemap.xml
-
-# Host directive
-Host: https://taasabusinessgroup.com/

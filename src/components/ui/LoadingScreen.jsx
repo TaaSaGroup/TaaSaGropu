@@ -1,13 +1,20 @@
 import { motion } from 'framer-motion'
-import WheatIcon from './WheatIcon'
+import Logo from '/assets/img/logos/TaaSa.svg'
 
-export default function LoadingScreen() {
+export default function LoadingScreen({ 
+  title = "TaaSa Business Group",
+  subtitle = "Loading...",
+  primaryColor = "#0B3D2E", 
+  accentColor = "#C9A227",
+  bgColor = "#0B3D2E"
+}) {
   return (
     <motion.div
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed inset-0 z-[9999] bg-deep-green flex items-center justify-center"
+      className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden"
+      style={{ backgroundColor: bgColor }}
     >
       <div className="text-center">
         <motion.div
@@ -22,15 +29,16 @@ export default function LoadingScreen() {
           className="w-24 h-24 mx-auto mb-8"
         >
           <div className="relative w-full h-full">
-            <div className="absolute inset-0 border-4 border-accent-gold/30 rounded-full" />
+            <div className="absolute inset-0 border-4 rounded-full" style={{ borderColor: `${accentColor}30` }} />
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
-              className="absolute inset-0 border-4 border-transparent border-t-accent-gold rounded-full"
+              className="absolute inset-0 border-4 border-transparent rounded-full"
+              style={{ borderTopColor: accentColor }}
             />
             <div className="absolute inset-3 rounded-full flex items-center justify-center">
               <img 
-                src="/assets/img/logos/logo.png" 
+                src={Logo} 
                 alt="TaaSa" 
                 className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
               />
@@ -45,9 +53,9 @@ export default function LoadingScreen() {
           className="space-y-2"
         >
           <h1 className="font-cursive font-bold text-3xl text-white">
-            TaaSa <span className="text-accent-gold">Rice Processing</span>
+            {title}
           </h1>
-          <p className="text-white/60 font-nunito text-sm">Premium Quality Rice</p>
+          <p className="text-white/60 font-nunito text-sm">{subtitle}</p>
         </motion.div>
 
         <motion.div
@@ -60,7 +68,8 @@ export default function LoadingScreen() {
             initial={{ width: '0%' }}
             animate={{ width: '100%' }}
             transition={{ duration: 1.8, ease: 'easeInOut' }}
-            className="h-full bg-gradient-to-r from-accent-gold to-olive-green"
+            className="h-full"
+            style={{ backgroundColor: accentColor }}
           />
         </motion.div>
       </div>
@@ -69,10 +78,11 @@ export default function LoadingScreen() {
         {[...Array(6)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-accent-gold/30 rounded-full"
+            className="absolute w-2 h-2 rounded-full"
             style={{
               left: `${10 + i * 15}%`,
               top: `${20 + Math.sin(i) * 30}%`,
+              backgroundColor: `${accentColor}30`,
             }}
             animate={{
               y: [-20, 20, -20],

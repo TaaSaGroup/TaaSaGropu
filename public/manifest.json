@@ -1,15 +1,15 @@
 {
-  "name": "TaaSa Rice Processing Company",
-  "short_name": "TaaSa Rice",
-  "description": "Sri Lanka's leading rice producer & exporter. Premium white rice & non-basmati rice. ISO 9001 Certified.",
+  "name": "TaaSa Business Group",
+  "short_name": "TaaSa Group",
+  "description": "Sri Lanka's premier business conglomerate since 2014. 5 companies: Rice Processing, Trading, Packaging, Guest Inn & Resort. ISO 9001:2015 Certified.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#F5F5DC",
-  "theme_color": "#0B3D2E",
+  "theme_color": "#0F172A",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
-  "categories": ["food", "shopping", "business"],
+  "categories": ["business", "travel", "food", "shopping"],
   "icons": [
     {
       "src": "/assets/img/logos/web-app-manifest-192x192.png",
@@ -32,26 +32,26 @@
   ],
   "screenshots": [
     {
-      "src": "/assets/img/pageimgs/hero-bg.jpg",
+      "src": "/assets/img/pageimgs/HomePage.png",
       "sizes": "1280x720",
-      "type": "image/jpeg",
+      "type": "image/png",
       "form_factor": "wide",
-      "label": "TaaSa Rice Processing Company - Home"
+      "label": "TaaSa Business Group - Home"
     }
   ],
   "shortcuts": [
     {
-      "name": "Contact Us",
-      "short_name": "Contact",
-      "description": "Get in touch with TaaSa Rice",
-      "url": "/#contact",
+      "name": "Our Companies",
+      "short_name": "Companies",
+      "description": "View all 5 companies",
+      "url": "/#companies",
       "icons": [{ "src": "/assets/img/logos/TaaSa-96x96.png", "sizes": "96x96" }]
     },
     {
-      "name": "Our Products",
-      "short_name": "Products",
-      "description": "View our rice products",
-      "url": "/#products",
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with TaaSa",
+      "url": "/#contact",
       "icons": [{ "src": "/assets/img/logos/TaaSa-96x96.png", "sizes": "96x96" }]
     }
   ],
@@ -59,12 +59,12 @@
   "prefer_related_applications": false,
   "dir": "ltr",
   "scope": "/",
-  "id": "taasa-riceprocessingcompany-netlify-app",
+  "id": "taasabusinessgroup-com",
   "launch_handler": {
     "client_mode": "auto"
   },
   "meta": {
-    "theme_color": "#0B3D2E",
+    "theme_color": "#0F172A",
     "background_color": "#F5F5DC"
   }
 }

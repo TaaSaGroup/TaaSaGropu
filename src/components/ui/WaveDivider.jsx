@@ -15,7 +15,7 @@ export default function WaveDivider({
   height = '100px',
   style = 'smooth',
   opacity = 1,
-  animated = true,
+  animated = false,
   className = ''
 }) {
   const gradientId = `wave-${Math.random().toString(36).substr(2, 9)}`
@@ -58,9 +58,9 @@ export default function WaveDivider({
             x2="100%" 
             y2="0%"
           >
-            <stop offset="0%" stopColor={topColor} />
-            <stop offset="50%" stopColor={middleColor} />
-            <stop offset="100%" stopColor={bottomColor} />
+            <stop offset="0%" stopColor={topColor} stopOpacity="1" />
+            <stop offset="50%" stopColor={topColor} stopOpacity="1" />
+            <stop offset="100%" stopColor={topColor} stopOpacity="1" />
           </linearGradient>
         </defs>
         <path 
@@ -131,7 +131,7 @@ export function WaveGradient({
   direction = 'up',
   height = '100px',
   style = 'smooth',
-  animated = true,
+  animated = false,
   className = ''
 }) {
   return (
