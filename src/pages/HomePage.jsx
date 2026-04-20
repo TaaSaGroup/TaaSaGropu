@@ -487,8 +487,8 @@ export default function HomePage() {
                   whileHover={{ scale: 1.05 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="p-4 sm:p-6 rounded-2xl text-center group cursor-pointer"
-                  style={{ backgroundColor: company.color }}
+                  className="p-4 sm:p-6 rounded-2xl text-center group cursor-pointer h-full flex flex-col justify-between"
+                  style={{ backgroundColor: company.color, minHeight: '140px' }}
                 >
                   <div className="text-4xl sm:text-5xl mb-3 text-white drop-shadow-lg">
                     {company.id === 'taasa-rice' && '🌾'}
