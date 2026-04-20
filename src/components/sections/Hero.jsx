@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { WaveGradient } from '../ui/WaveDivider'
 import { COMPANY_INFO } from '../../lib/constants'
+import Logo from '/assets/img/logos/rice.svg'
 
 const HERO_COLORS = {
   primary: '#0B3D2E',
@@ -18,16 +19,12 @@ export default function Hero() {
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-6"
         >
-          <span 
-            className="inline-block px-6 py-2 rounded-full text-sm font-semibold mb-6" 
-            style={{ backgroundColor: HERO_COLORS.accent, color: HERO_COLORS.primary }}
-          >
-            {COMPANY_INFO.sector}
-          </span>
+          <img src={Logo} alt="TaaSa Rice" className="w-40 h-32 mx-auto" style={{ filter: 'brightness(0) invert(1)' }} />
         </motion.div>
 
         <motion.h1

@@ -321,13 +321,15 @@ export default function HomePage() {
                           {company.description}
                         </p>
                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                          <Link
-                            to={`/${company.id}`}
-                            className="flex items-center justify-center gap-2 px-6 py-3 rounded-full font-cursive font-semibold text-base transition-all w-full"
-                            style={{ backgroundColor: company.accent, color: company.color }}
-                          >
-                            Visit {company.shortName} <ArrowRight className="w-5 h-5" />
-                          </Link>
+                          <div tabindex="0" style={{ transform: 'none' }}>
+                            <Link
+                              to={`/${company.id}`}
+                              className="flex items-center justify-center gap-2 px-6 py-3 rounded-full font-cursive font-semibold text-base transition-all w-full"
+                              style={{ backgroundColor: company.accent, color: company.color }}
+                            >
+                              Visit {company.shortName} <ArrowRight className="w-5 h-5" />
+                            </Link>
+                          </div>
                         </motion.div>
                       </motion.div>
                       
@@ -403,15 +405,18 @@ export default function HomePage() {
               </h2>
               <div className="w-20 h-1 rounded-full mb-8" style={{ backgroundColor: '#C9A227' }} />
               <p className="font-nunito text-gray-700 text-lg mb-6 leading-relaxed">
-                TaaSa Business Group is a premier conglomerate in Sri Lanka, operating across five diverse sectors: Agriculture, Trading, Manufacturing, Hospitality, and Tourism. Founded with a vision to deliver excellence, we have grown from a single rice processing company into a multi-industry leader.
+                <strong>TaaSa Business Group</strong> is a premier conglomerate in Sri Lanka, operating across five diverse sectors: Agriculture, Trading, Manufacturing, Hospitality, and Tourism. Founded with a vision to deliver excellence, we have grown from a single rice processing company into a multi-industry leader.
               </p>
               <p className="font-nunito text-gray-700 text-lg mb-8 leading-relaxed">
                 Our group combines traditional Sri Lankan values with modern business practices, ensuring quality products and exceptional services while maintaining our commitment to sustainability and community development.
               </p>
-              <div className="p-6 rounded-2xl bg-white shadow-lg border-l-4" style={{ borderColor: '#C9A227' }}>
-                <p className="font-nunito text-gray-500 text-sm mb-1">Managing Director</p>
-                <h3 className="font-cursive font-bold text-2xl" style={{ color: '#0f172a' }}>SL. Mohamed Thahir</h3>
-                <p className="font-nunito text-gray-600 text-sm mt-2">Founder & Visionary Leader</p>
+              <p className="font-nunito text-gray-700 text-lg mb-8 leading-relaxed">
+                Driven by innovation and trust, we are shaping a better future for Sri Lanka and beyond.
+              </p>
+              <div className="text-right">
+                <p className="font-nunito text-black/80 text-sm">Founder & Visionary Leader</p>
+                <h3 className="font-cursive font-bold text-xl sm:text-2xl text-black">SL. Mohamed Thahir</h3>
+                <p className="font-nunito text-black/80 text-sm mt-1">Managing Director & CEO</p>
               </div>
             </motion.div>
           </div>

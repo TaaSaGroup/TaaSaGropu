@@ -17,7 +17,7 @@ import Contact from '../components/sections/Contact'
 import FloatingRice from '../components/ui/FloatingRice'
 import LoadingScreen from '../components/ui/LoadingScreen'
 import WhatsAppButton from '../components/ui/WhatsAppButton'
-import Logo from '/assets/img/logos/TaaSa.svg'
+import Logo from '/assets/img/logos/rice.svg'
 import { COMPANIES } from '../lib/constants'
 import SEO from '../components/ui/SEO'
 
@@ -134,7 +134,7 @@ function Navbar({ company }) {
             >
               <img 
                 src={Logo} 
-                alt="TaaSa Rice" 
+                alt="TaaSa Rice Logo" 
                 className="w-full h-full object-contain rounded-lg"
                 loading="eager"
               />
