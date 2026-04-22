@@ -148,7 +148,7 @@ export default function About() {
                     <WheatIcon size={24} sm:size={32} md:size={36} lg:size={40} variant="glow" />
                   </div>
                   <div>
-                    <div className="font-handlee font-bold text-deep-green text-base sm:text-lg md:text-xl lg:text-2xl">100% Pure</div>
+                    <div className="font-handlee font-bold text-deep-green text-base sm:text-lg md:text-xl lg:text-2xl">99.9% Pure</div>
                   </div>
                 </div>
               </motion.div>

@@ -43,8 +43,9 @@ function validateField(name, value) {
   }
 }
 
-export default function Contact({ colors = DEFAULT_COLORS }) {
+export default function Contact({ colors = DEFAULT_COLORS, companyName }) {
   const { bg = DEFAULT_COLORS.bg, primary = DEFAULT_COLORS.primary, accent = DEFAULT_COLORS.accent } = colors
+  const company = companyName || COMPANY_INFO.name
   const [formData, setFormData] = useState(initialFormState)
   const [errors, setErrors] = useState(initialErrorState)
   const [touched, setTouched] = useState({})
@@ -89,7 +90,7 @@ export default function Contact({ colors = DEFAULT_COLORS }) {
 
     setIsSubmitting(true)
     
-    const message = `Hello ${COMPANY_INFO.name}!\n\nName: ${formData.name}\nPhone: ${formData.phone}${formData.email ? `\nEmail: ${formData.email}` : ''}\nMessage: ${formData.message}`
+    const message = `Hello ${company}!\n\nName: ${formData.name}\nPhone: ${formData.phone}${formData.email ? `\nEmail: ${formData.email}` : ''}\nMessage: ${formData.message}`
     
     window.open(
       `https://wa.me/${COMPANY_INFO.whatsappClean}?text=${encodeURIComponent(message)}`,

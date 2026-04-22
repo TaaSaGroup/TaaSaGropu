@@ -545,7 +545,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <Contact colors={{ bg: COLORS.bg, primary: COLORS.color, accent: COLORS.accent }} />
+      <Contact colors={{ bg: COLORS.bg, primary: COLORS.color, accent: COLORS.accent }} companyName="TaaSa Business Group" />
       
       <Footer />
       <WhatsAppButton page="home" />

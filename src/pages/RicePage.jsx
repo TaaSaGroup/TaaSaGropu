@@ -71,7 +71,7 @@ export default function RicePage() {
           <Gallery />
           <FAQ />
           <Reviews />
-          <Contact />
+          <Contact companyName={company.name} />
         </main>
         <Footer company={company} />
         <WhatsAppButton page="taasa-rice" />

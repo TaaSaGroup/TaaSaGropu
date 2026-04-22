@@ -80,7 +80,7 @@ export default function CompanyPage() {
         <HeroSection company={company} />
       <AboutSection company={company} />
       <FeaturesSection company={company} />
-      <Contact colors={{ bg: '#F5F5DC', primary: company.color, accent: company.accent }} />
+      <Contact colors={{ bg: '#F5F5DC', primary: company.color, accent: company.accent }} companyName={company.name} />
       </CompanyPageLayout>
     </>
   )
